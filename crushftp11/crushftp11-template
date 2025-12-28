@@ -14,11 +14,11 @@
   <Category>Backup: Cloud: Network:Web Network:FTP Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/LunarstarFurry/docker-CrushFTP/blob/alpine/crushftp.png?raw=true</Icon>
+  <Icon>https://github.com/LunarstarFurry/docker-templates-unraid/blob/main/crushftp11/crushftp.png?raw=true</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1766882888</DateInstalled>
+  <DateInstalled>1766883363</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
