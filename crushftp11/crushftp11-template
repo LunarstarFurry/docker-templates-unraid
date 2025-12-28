@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>CrushFTP11</Name>
+  <Repository>lunarstarfurry/crushftp11-alpine:alpine</Repository>
+  <Registry>https://hub.docker.com/r/lunarstarfurry/crushftp11-alpine</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://www.crushftp.com/index.html</Project>
+  <ReadMe/>
+  <Overview>Share your files securely with FTP, Implicit FTPS, SFTP, HTTP, or HTTPS using CrushFTP 11. Built on Alpine 3.25. See dockerhub registry page for more details.</Overview>
+  <Category>Backup: Cloud: Network:Web Network:FTP Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/LunarstarFurry/docker-CrushFTP/blob/alpine/crushftp.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1766882888</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="FTP Port" Target="21" Default="21" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">21</Config>
+  <Config Name="HTTPS Port" Target="443" Default="443" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">443</Config>
+  <Config Name="FTP Passive Ports" Target="2000-2100" Default="2000-2100" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">2000-2100</Config>
+  <Config Name="SFTP Port" Target="2222" Default="2222" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">2222</Config>
+  <Config Name="HTTP Port" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="HTTP Alt Port" Target="9090" Default="9090" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">9090</Config>
+  <Config Name="CrushFTP Admin" Target="CRUSH_ADMIN_USER" Default="crushadmin" Mode="" Description="Default admin user for CrushFTP administration" Type="Variable" Display="always" Required="true" Mask="false">crushadmin</Config>
+  <Config Name="CrushFTP Admin Password" Target="CRUSH_ADMIN_PASSWORD" Default="crushadmin" Mode="" Description="Default admin password for CrushFTP administration" Type="Variable" Display="always" Required="true" Mask="true">crushadmin</Config>
+  <Config Name="Healthcheck Protocol" Target="CRUSH_ADMIN_PROTOCOL" Default="http" Mode="" Description="Protocol for health checks (http or https)" Type="Variable" Display="always" Required="true" Mask="false">http</Config>
+  <Config Name="Healthceck Port" Target="CRUSH_ADMIN_PORT" Default="8080" Mode="" Description="Port for health checks" Type="Variable" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="FTP Folder 1" Target="/mnt/FTP/Shared" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
+  <Config Name="Config Volume" Target="/var/opt/CrushFTP11" Default="/mnt/cache/appdata/crushftp" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/crushftp11</Config>
+  <TailscaleStateDir/>
+</Container>
